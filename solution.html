@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>solution</title>
+	<style type="text/css">
+		#btn {
+			width: 200px;
+			height: 200px;
+			text-align: center;
+			background: #666;
+			font-size: 28px;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn" onclick="runSolution(5)">run solution</button>
+</body>
+<script type="text/javascript" src="./solution.js"></script>
+<script type="text/javascript">
+ const params = {
+ 	1: '',
+ 	2: '',
+ 	3: 'pwwkew',
+ 	4: [[3], [-2, -1]],
+ 	5: 'aba',
+ }
+ const solution = {
+	1: twoSum,
+	2: addTwoNumbers,
+	3: lengthOfLongestSubstring,
+	4: findMedianSortedArrays,
+	5: longestPalindrome,
+}
+const runSolution = (index) => {
+	console.log(solution[index](params[index]));
+}
+</script>
+</html>
